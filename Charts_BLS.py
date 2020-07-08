@@ -4,7 +4,7 @@ import bls
 import plotly.express as px
 
 # Basic Bar Chart Function
-def makeBarChart(series, startYear, endYear, changeValue, yaxisAltName):
+def makeBarChart(series, startYear, endYear, changeValue, yaxisAltName, title):
     BLSid = "INSERT YOUR OWN PUBLIC DATA API ACCT NUMBER"
     df = bls.get_series(series, startYear, endYear, BLSid)
     df = df.reset_index()
