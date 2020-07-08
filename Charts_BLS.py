@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 def makeChart(series, startYear, endYear, changeValue, yaxisAltName):
-    BLSid = "c90dfae15adb45e68b3cbf64f5304e9a"
+    BLSid = "INSERT YOUR OWN PUBLIC DATA API ACCT NUMBER"
     df = bls.get_series(series, startYear, endYear, BLSid)
     df = df.reset_index()
     df.columns = ['Date', yaxisAltName]
@@ -64,14 +64,3 @@ makeChart('SMU51947830000000001', 1990, 2020, 1, 'Job Change')
 
 
 
-
-# ''' Slide 33: NoVa Annual Job Change - MoY & Total, 2012 to Present'''
-# JC33 = bls.get_series('SMU51947830000000001', 1999, 2020, BLSid)
-
-# ''' ========================================================== '''
-# ''' Slide 37: WMA PB&S Job Change - MoY, 2013 to Present'''
-# PBSJC37 = bls.get_series('SMU11479006000000001', 1999, 2020, BLSid)
-
-# ''' ========================================================== '''
-# ''' Slide 39: Federal Government Job Change - MoY & Total, 2010 to Present'''
-# FedJC39 = bls.get_series('SMU11479009091000001', 1999, 2020, BLSid)
