@@ -164,10 +164,10 @@ def makeHorzBarChart(series1, series2, series3, series4, series5, series6, serie
 makeBarChart('CES0000000001', 1999, 2020, 12, 'Jobs', title = "US Payroll Jobs - YoY, 2000 to Present")
 
 # Slide 4: US Payroll Jobs - MoM, 2000 to Present
-makeBarChart('CES0000000001', 2000, 2020, 1, 'Jobs')
+makeBarChart('CES0000000001', 2000, 2020, 1, 'Jobs', title = 'US Payroll Jobs - MoM, 2000 to Present')
 
 # Slide 5: US Payroll Jobs - MoM & Total, 2013 to Present
-makeBarChart('CES0000000001', 2012, 2020, 1, 'Jobs')
+makeBarChart('CES0000000001', 2012, 2020, 1, 'Jobs', title = 'US Payroll Jobs - MoM & Total, 2013 to Present')
 
 # Slide 6: US Payroll Job Change by Sector -  12 Month Net Change
 makeHorzBarChart('CES9091000001',
@@ -199,45 +199,46 @@ makeHorzBarChart('CES9091000001',
 
 
 # Slide 8: US Unemployment Rate, 2010 to Present
-makeLineChart('LNS14000000', 2010, 2020, 0, 'Unemployment Rate')
+makeLineChart('LNS14000000', 2010, 2020, 0, 'Unemployment Rate', title = 'US Unemployment Rate, 2010 to Present')
 
 # Slide 13: US Labor Productivity, 2000 to Present
-makeBarChart('PRS85006093', 2000, 2020, 0, 'Productivity')
+makeBarChart('PRS85006093', 2000, 2020, 0, 'Productivity', title = 'US Labor Productivity, 2000 to Present')
 
 
-#NOT WORKING 15, 16 because of "HALF1" and "HALF2" time period points. May have to do these seperate without function.
+#NOT WORKING 15, 16 because of "HALF1" and "HALF2" time period points. 
+# May have to do these seperate without function.
+# Or change the function to ignore anything other than normal months
 # Slide 15: US Annual Consumer Prices - YoY, 2001 to Present
-makeBarChart('CUUS0000SA0', 2000, 2020, 12, 'Consumer Price Change')
+makeBarChart('CUUS0000SA0', 2000, 2020, 12, 'Consumer Price Change', title = 'US Annual Consumer Prices - YoY, 2001 to Present')
 
 # Slide 16: US Monthly Consumer Prices - MoM, 2001 to Present
-makeBarChart('CUUS0000SA0', 2001, 2020, 0, 'Consumer Prices')
+makeBarChart('CUUS0000SA0', 2001, 2020, 0, 'Consumer Prices', title = 'US Monthly Consumer Prices - MoM, 2001 to Present')
 
 
 # Slide 25: WMA Annual Job Change - YoY, 1991 to Present
-makeBarChart('SMU11479000000000001', 1990, 2020, 12, 'Job Change')
+makeBarChart('SMU11479000000000001', 1990, 2020, 12, 'Job Change', title = 'Washington MSA Annual Job Change - YoY, 1991 to Present')
 
 # Slide 26: WMA Annual Job Change - MoM & Total, 2012 to Present
-makeBarChart('SMU11479000000000001', 2012, 2020, 1, 'Job Change')
+makeBarChart('SMU11479000000000001', 2012, 2020, 1, 'Job Change', title = 'Washington MSA Annual Job Change - MoM & Total, 2012 to Present')
 
 # Slide 28: DC Annual Job Change - MoM, 2012 to Present
-makeBarChart('SMU11000000000000001', 2011, 2020, 1, 'Job Change')
+makeBarChart('SMU11000000000000001', 2011, 2020, 1, 'Job Change', title = 'Washington DC Annual Job Change - MoM, 2012 to Present')
 
 # Slide 29: DC Annual Job Change - MoY & Total, 1991 to Present
-makeBarChart('SMU11000000000000001', 1998, 2020, 12, 'Job Change')
+makeBarChart('SMU11000000000000001', 1998, 2020, 12, 'Job Change', title = 'Washington DC Annual Job Change - MoY & Total, 1991 to Present')
 
 # Slide 32: NoVa Annual Job Change - MoY, 1991 to Present
-makeBarChart('SMU51947830000000001', 1990, 2020, 12, 'Job Change')
+makeBarChart('SMU51947830000000001', 1990, 2020, 12, 'Job Change', title = 'NoVa Annual Job Change - MoY, 1991 to Present')
 
 # Slide 33: NoVa Annual Job Change - MoY & Total, 2012 to Present
-makeBarChart('SMU51947830000000001', 2012, 2020, 12, 'Job Change')
+makeBarChart('SMU51947830000000001', 2012, 2020, 12, 'Job Change', title = 'MoY & Total, 2012 to Present')
 
 
 # Slide 37: WMA PB&S Job Change - MoY, 2013 to Present
-makeBarChart('SMU11479006000000001', 2012, 2020, 12, 'Job Change')
+makeBarChart('SMU11479006000000001', 2012, 2020, 12, 'Job Change', title = 'WMA PB&S Job Change - MoY, 2013 to Present')
 
-Slide 39: Federal Government Job Change - MoY & Total, 2010 to Present
-makeBarChart('SMU11479009091000001', 2009, 2020, 12, 'Job Change')
-
+# Slide 39: Federal Government Job Change - MoY & Total, 2010 to Present
+makeBarChart('SMU11479009091000001', 2009, 2020, 12, 'Job Change', title = 'Federal Government Job Change - MoY & Total, 2010 to Present')
 
 
 
