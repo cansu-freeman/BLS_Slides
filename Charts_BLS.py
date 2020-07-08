@@ -20,7 +20,7 @@ def makeBarChart(series, startYear, endYear, changeValue, yaxisAltName, title):
             chart_df['Date'] = df['Date'].astype(str)
             fig = px.bar(chart_df, x = 'Date', y = str(changeValue)+' Month Change')
         fig.show()
-    createFigure(df)
+    createBarFigure(df)
     
 # Basic Line Chart Function
 def makeLineChart(series, startYear, endYear, changeValue, yaxisAltName, title):
