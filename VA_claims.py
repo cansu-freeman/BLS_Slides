@@ -44,4 +44,4 @@ plt.ylabel('THOUSANDS', fontdict= {'stretch':'condensed', 'variant': 'small-caps
 plt.ylim(0, 160)
 plt.title('Virginia: Initial Claims for Unemployment (Seasonally Adjusted)')
 plt.margins(.01)
-plt.savefig('/Users/cansu/Desktop/VAICLAIMS.png', bbox_inches='tight')
+plt.savefig('/Users/XXXXX/Desktop/VAICLAIMS.png', bbox_inches='tight')
