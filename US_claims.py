@@ -44,4 +44,4 @@ plt.ylabel('MILLIONS', fontdict= {'stretch':'condensed', 'variant': 'small-caps'
 plt.ylim(0, 8)
 plt.title('National: Initial Claims for Unemployment (Seasonally Adjusted)')
 plt.margins(.01)
-plt.savefig('/Users/cansu/Desktop/ICSA.png', bbox_inches='tight')
+plt.savefig('/Users/XXXXX/Desktop/ICSA.png', bbox_inches='tight')
